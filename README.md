@@ -1,1 +1,1 @@
-# dev-manifesto
+# Dev Team Manifesto
