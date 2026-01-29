@@ -6,7 +6,7 @@
 - **Atomicity and Naming:** Avoid cumbersome names. Decompose complex logic into small, atomic functions. In narrow contexts, short and precise names (`save`, `fetch`) are preferred.
 - **Code Elegance & Conciseness:** Strive for elegant and concise solutions. Elegant code provides maximum clarity with minimal complexity. If a solution feels cluttered or "heavy," it requires refactoring into something more refined.
 - **Informed Tech Stack:** Integration of new tools is subject to collective discussion and must be documented in `TECH_STACK.md`.
-- **Technical Debt Management:** Temporary solutions ("workarounds") are permitted only if a corresponding task (Ticket) is created in the backlog for subsequent refactoring.
+- **Technical Debt Management:** Temporary solutions ("workarounds") are permitted only if an issue ticket is created in the backlog. The code must include a // TODO comment referencing the specific Ticket ID.
 - **Dependency Management:** Adding external packages for atomic functionality is prohibited. Assess package weight and project impact before installation.
 - **Boy Scout Rule:** Always leave the code in a better state than you found it.
 
