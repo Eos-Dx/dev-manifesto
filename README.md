@@ -23,7 +23,6 @@
 ## IV. AI Usage and Security Policy
 - **Accountability:** Developers bear personal responsibility for every line of code. Including AI-generated solutions that are not fully understood by the author is prohibited.
 - **Automation Trade-offs:** Speed of generation must not compromise system understanding. Unverified AI code creates hidden technical debt that complicates long-term maintenance.
-- **Risk Logging:** Non-obvious or experimental AI solutions must be documented in `AI_RISK_LOG.md`.
 - **Security:** Transferring proprietary business logic, API keys, or personal data to public AI services is strictly prohibited.
 
 ## V. Development Process (GitFlow)
@@ -32,11 +31,13 @@
   *Examples:* feat: add user authentication, fix: resolve login logic error, refactor: simplify date helper, chore: update dependencies.
 - **Code Review:** Pull Requests to `Develop` require approval from at least one peer to ensure compliance with this Manifesto.
 
-### ⚠️ AI_RISK_LOG.md
+## VI. AI Risk Reporting Workflow
 
-`[Date] | [Commit SHA] | [File:Line] | [Solution Summary] | [Potential Risks] | [Status]`
-
-*Statuses: Review Required, Monitoring, Refactor Planned, Accepted.*
+*Log AI risks as **GitHub Issues** in the `dev-manifesto` repo.*
+1. **Trigger:** Committing complex or "magical" AI-generated code.
+2. **Action:** Create an Issue with the `AI-Risk` label.
+3. **Format:** Include the Commit Link and Context (Logic details).
+4. **Resolution:** Discuss during Code Review. Close only after refactoring or team approval.
 
 ### 🛠 TECH_STACK.md
 
