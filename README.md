@@ -30,8 +30,12 @@
 *Log AI-related risks using the "AI Risk Report" template in the GitHub Issues of the `dev-manifesto` repo.*
 1. **Trigger:** Committing complex or "magical" AI-generated code.
 2. **Action:** Create an Issue with the `AI-Risk` label.
-3. **Format:** Include the Commit Link and Context (Logic details).
-4. **Resolution:** Discuss during Code Review. Close only after refactoring or team approval.
+3. **Labels & Statuses:**
+    *   `Review Required`: Default status for new risks pending discussion.
+    *   `Accepted`: Risk is understood and approved by the team.
+    *   `Refactor Planned`: Risk is identified, and a refactoring ticket is created.
+4. **Format:** Include the Commit Link and Context (Logic details).
+5. **Resolution:** Discuss during Code Review. Close only after refactoring or team approval.
 
 ## VI. Development Process (GitFlow)
 - **Branching:** We follow the Develop / Release model. Direct commits to the `Main` branch are excluded.
