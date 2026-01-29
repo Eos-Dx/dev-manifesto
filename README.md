@@ -1,1 +1,36 @@
-# Dev Team Manifesto
+Dev Team Manifesto
+I. Engineering Principles
+Write Code for Others: Logical transparency takes priority over complex optimization. Code must be clear to any team member without the author's explanation.
+Atomicity and Naming: Avoid cumbersome names. Decompose complex logic into small, atomic functions. In narrow contexts, short and precise names (save, fetch) are preferred.
+KISS & YAGNI: Implement the simplest technical solutions. Avoid architectural over-engineering in anticipation of hypothetical future requirements.
+Informed Tech Stack: Integration of new tools is subject to collective discussion and must be documented in TECH_STACK.md.
+Technical Debt Management: Temporary solutions ("workarounds") are permitted only if a corresponding task (Ticket) is created in the backlog for subsequent refactoring.
+Dependency Management: Adding external packages for atomic functionality is prohibited. Assess package weight and project impact before installation.
+Boy Scout Rule: Always leave the code in a better state than you found it.
+
+II. API Specifications and Mocking (Swagger)
+Contract-First: API specifications (OpenAPI) are authored manually in the api-specs repository prior to development. The specification serves as the primary contract and the single source of truth.
+Mandatory Mocking: Every response schema must include realistic example data. This enables frontend development to proceed in parallel using mocks without dependency on backend readiness.
+
+III. Quality Control (Linters)
+Zero Tolerance: Passing linter checks is a mandatory requirement for code merging. Any static analysis errors or warnings will block Pull Request approval.
+Automation: Linting and formatting tools must be integrated into the workflow of every project. Analyzer configurations are unified across the entire team.
+
+IV. AI Usage and Security Policy
+Accountability: Developers bear personal responsibility for every line of code. Including AI-generated solutions that are not fully understood by the author is prohibited.
+Automation Trade-offs: Speed of generation must not compromise system understanding. Unverified AI code creates hidden technical debt that complicates long-term maintenance.
+Risk Logging: Non-obvious or experimental AI solutions must be documented in AI_RISK_LOG.md.
+Security: Transferring proprietary business logic, API keys, or personal data to public AI services is strictly prohibited.
+
+V. Development Process (GitFlow)
+Branching: We follow the Develop / Release model. Direct commits to the Main branch are excluded.
+Conventional Commits: Commit messages must strictly follow the <type>: <description> standard.
+Examples: feat: add user authentication, fix: resolve login logic error, refactor: simplify date helper, chore: update dependencies.
+Code Review: Pull Requests to Develop require approval from at least one peer to ensure compliance with this Manifesto.
+
+⚠️ AI_RISK_LOG.md
+[Date] | [Commit SHA] | [File:Line] | [Solution Summary] | [Potential Risks] | [Status]
+Statuses: Review Required, Monitoring, Refactor Planned, Accepted.
+🛠 TECH_STACK.md
+[Technology] | [Status] | [Rationale] | [Owner]
+Statuses: Assess, Trial, Adopt, Hold
