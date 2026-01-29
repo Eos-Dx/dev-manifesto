@@ -4,7 +4,7 @@
 
 - **Write Code for Others:** Logical transparency takes priority over complex optimization. Code must be clear to any team member without the author's explanation.
 - **Atomicity and Naming:** Avoid cumbersome names. Decompose complex logic into small, atomic functions. In narrow contexts, short and precise names (`save`, `fetch`) are preferred.
-- **KISS & YAGNI:** Implement the simplest technical solutions. Avoid architectural over-engineering in anticipation of hypothetical future requirements.
+- **Code Elegance & Conciseness:** Strive for elegant and concise solutions. Elegant code provides maximum clarity with minimal complexity. If a solution feels cluttered or "heavy," it requires refactoring into something more refined.
 - **Informed Tech Stack:** Integration of new tools is subject to collective discussion and must be documented in `TECH_STACK.md`.
 - **Technical Debt Management:** Temporary solutions ("workarounds") are permitted only if a corresponding task (Ticket) is created in the backlog for subsequent refactoring.
 - **Dependency Management:** Adding external packages for atomic functionality is prohibited. Assess package weight and project impact before installation.
