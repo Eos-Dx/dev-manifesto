@@ -3,7 +3,7 @@
 ## I. Engineering Principles
 
 - **Write Code for Others:** Logical transparency takes priority over complex optimization. Code must be clear to any team member without the author's explanation.
-- **Project Autonomy:** Eliminate reliance on author-specific knowledge. All logic and architectural decisions must be externalized through code and documentation to ensure seamless project handover.
+- **Project Autonomy:** Use an intuitive folder structure to make the logic transparent. The project must be self-explanatory so any developer can take over without the author's input. Mandatory English comments must be used to explain complex logic.
 - **Atomicity and Naming:** Avoid cumbersome names. Decompose complex logic into small, atomic functions. In narrow contexts, short and precise names (`save`, `fetch`) are preferred.
 - **Code Elegance & Conciseness:** Strive for elegant and concise solutions. Elegant code provides maximum clarity with minimal complexity. If a solution feels cluttered or "heavy," it requires refactoring into something more refined.
 - **Informed Tech Stack:** Integration of new tools is subject to collective discussion and must be documented in `TECH_STACK.md`.
